@@ -2,6 +2,10 @@
 
 A sophisticated Python-based conversational AI agent for recipe search and ingredient extraction, powered by **Azure AI Foundry** with a clean, extensible architecture.
 
+## **My Philosophy**: 
+- Start with **Managed** (Azure-native orchestration)
+- Graduate to **BYO** (Semantic Kernel/LangChain) if complexity demands it
+
 ## ✨ Features
 
 ### 🔍 **Intelligent Recipe Search**
