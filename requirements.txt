@@ -1,0 +1,40 @@
+# ========== Core dependencies for Azure AI Foundry Chef AI Agent ==========
+# Azure OpenAI SDK
+openai>=1.12.0
+
+# Azure AI SDK (for Foundry integration)
+azure-ai-inference>=1.0.0b3
+azure-identity>=1.15.0
+
+# Environment and utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# ========== Optional: Alternative Orchestrators ==========
+# Uncomment if using Semantic Kernel
+# semantic-kernel>=1.0.0
+
+# Uncomment if using LangChain
+# langchain>=0.1.0
+# langchain-openai>=0.0.5
+
+# ========== Optional: External Memory Stores ==========
+# Uncomment for Redis memory backend
+# redis>=5.0.0
+
+# Uncomment for Cosmos DB memory backend
+# azure-cosmos>=4.5.0
+
+# ========== Optional: Observability ==========
+# Uncomment for Azure Monitor integration
+# azure-monitor-opentelemetry>=1.0.0
+# opencensus-ext-azure>=1.1.0
+
+# ========== Optional: Recipe API Integration ==========
+# Uncomment for production recipe API
+# spoonacular>=3.0.0
+
+# ========== Development dependencies (optional) ==========
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0

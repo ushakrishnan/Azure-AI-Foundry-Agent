@@ -1,0 +1,131 @@
+# .gitignore for ChefAI Azure AI Foundry Agent
+
+# ========== Sensitive Files ==========
+# Environment variables with API keys and secrets
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
+
+# Azure credentials and configurations
+azure.json
+appsettings.json
+appsettings.*.json
+local.settings.json
+
+# Secrets and API keys
+*secret*
+*credential*
+*password*
+*token*
+*key.json
+*-key.json
+*.pem
+*.key
+*.cer
+*.crt
+*.pfx
+serviceAccount*.json
+
+# ========== Python ==========
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# ========== IDE ==========
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ========== Logs ==========
+*.log
+# ========== Azure Functions ==========
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# ========== M365 Integration ==========
+teams-manifest/
+*.zip
+node_modules/
+package-lock.json
+
+# ========== Other ==========
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*~
+
+# Database files (if using local DB for testing)
+*.db
+*.sqlite
+*.sqlite3
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========== Testing ==========
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ========== Other ==========
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Database files (if using local DB for testing)
+*.db
+*.sqlite
+*.sqlite3

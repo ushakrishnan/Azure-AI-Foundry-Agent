@@ -1,0 +1,528 @@
+[
+  {
+    "title": "Classic Margherita Pizza",
+    "description": "Traditional Italian pizza with fresh mozzarella, tomatoes, and basil",
+    "cuisine": "Italian",
+    "time_minutes": 25,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["vegetarian"],
+    "ingredients": [
+      "pizza dough",
+      "tomato sauce",
+      "fresh mozzarella cheese",
+      "fresh basil leaves",
+      "olive oil",
+      "salt",
+      "pepper"
+    ],
+    "steps": [
+      "Preheat oven to 475°F (245°C)",
+      "Roll out pizza dough on a floured surface",
+      "Spread tomato sauce evenly over dough",
+      "Add torn mozzarella pieces",
+      "Bake for 12-15 minutes until crust is golden",
+      "Top with fresh basil and drizzle with olive oil"
+    ]
+  },
+  {
+    "title": "Vegan Buddha Bowl",
+    "description": "Colorful and nutritious bowl with quinoa, roasted vegetables, and tahini dressing",
+    "cuisine": "Mediterranean",
+    "time_minutes": 35,
+    "difficulty": "easy",
+    "servings": 2,
+    "dietary_info": ["vegan", "gluten-free", "dairy-free"],
+    "ingredients": [
+      "quinoa",
+      "chickpeas",
+      "sweet potato",
+      "kale",
+      "tahini",
+      "lemon juice",
+      "avocado",
+      "cherry tomatoes"
+    ],
+    "steps": [
+      "Cook quinoa according to package instructions",
+      "Roast chickpeas and diced sweet potato at 400°F for 25 minutes",
+      "Massage kale with lemon juice and olive oil",
+      "Make tahini dressing with tahini, lemon, water, and garlic",
+      "Arrange quinoa, vegetables, and avocado in bowls",
+      "Drizzle with tahini dressing"
+    ]
+  },
+  {
+    "title": "Chicken Stir-Fry",
+    "description": "Quick Asian-style stir-fry with tender chicken and crisp vegetables",
+    "cuisine": "Asian",
+    "time_minutes": 20,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "chicken breast",
+      "soy sauce",
+      "ginger",
+      "garlic",
+      "bell peppers",
+      "broccoli",
+      "carrots",
+      "sesame oil",
+      "rice"
+    ],
+    "steps": [
+      "Slice chicken into thin strips",
+      "Heat sesame oil in wok over high heat",
+      "Cook chicken until browned, about 5 minutes",
+      "Add minced ginger and garlic, cook 1 minute",
+      "Add vegetables and stir-fry 5 minutes",
+      "Add soy sauce and toss to coat",
+      "Serve over steamed rice"
+    ]
+  },
+  {
+    "title": "Gluten-Free Salmon with Asparagus",
+    "description": "Healthy baked salmon with lemon and roasted asparagus",
+    "cuisine": "Mediterranean",
+    "time_minutes": 25,
+    "difficulty": "easy",
+    "servings": 2,
+    "dietary_info": ["gluten-free", "dairy-free"],
+    "ingredients": [
+      "salmon fillets",
+      "asparagus",
+      "lemon",
+      "olive oil",
+      "garlic",
+      "dill",
+      "salt",
+      "pepper"
+    ],
+    "steps": [
+      "Preheat oven to 400°F (200°C)",
+      "Place salmon and asparagus on baking sheet",
+      "Drizzle with olive oil and lemon juice",
+      "Season with minced garlic, dill, salt, and pepper",
+      "Bake for 15-18 minutes until salmon flakes easily",
+      "Serve with lemon wedges"
+    ]
+  },
+  {
+    "title": "Beef Tacos",
+    "description": "Flavorful Mexican street-style tacos with seasoned ground beef",
+    "cuisine": "Mexican",
+    "time_minutes": 20,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "ground beef",
+      "taco seasoning",
+      "corn tortillas",
+      "onion",
+      "cilantro",
+      "lime",
+      "tomatoes",
+      "jalapeños"
+    ],
+    "steps": [
+      "Brown ground beef in skillet over medium heat",
+      "Add taco seasoning and water, simmer 5 minutes",
+      "Warm tortillas in dry skillet",
+      "Fill tortillas with beef",
+      "Top with diced onion, cilantro, and tomatoes",
+      "Squeeze lime juice over tacos and serve"
+    ]
+  },
+  {
+    "title": "Thai Green Curry",
+    "description": "Creamy and aromatic Thai curry with vegetables and coconut milk",
+    "cuisine": "Asian",
+    "time_minutes": 30,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["vegan", "gluten-free", "dairy-free"],
+    "ingredients": [
+      "green curry paste",
+      "coconut milk",
+      "tofu",
+      "bamboo shoots",
+      "bell peppers",
+      "thai basil",
+      "lime leaves",
+      "rice"
+    ],
+    "steps": [
+      "Cook rice according to package instructions",
+      "Heat curry paste in large pot for 1 minute",
+      "Add coconut milk and bring to simmer",
+      "Add cubed tofu and vegetables",
+      "Simmer 15 minutes until vegetables tender",
+      "Stir in thai basil and lime leaves",
+      "Serve over jasmine rice"
+    ]
+  },
+  {
+    "title": "Caprese Salad",
+    "description": "Simple Italian salad with fresh tomatoes, mozzarella, and basil",
+    "cuisine": "Italian",
+    "time_minutes": 10,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      "tomatoes",
+      "fresh mozzarella",
+      "fresh basil",
+      "olive oil",
+      "balsamic vinegar",
+      "salt",
+      "pepper"
+    ],
+    "steps": [
+      "Slice tomatoes and mozzarella into 1/4 inch rounds",
+      "Arrange alternating slices on serving platter",
+      "Tuck basil leaves between slices",
+      "Drizzle with olive oil and balsamic vinegar",
+      "Season with salt and pepper",
+      "Let sit 10 minutes before serving"
+    ]
+  },
+  {
+    "title": "Lentil Soup",
+    "description": "Hearty and comforting soup packed with protein and vegetables",
+    "cuisine": "Mediterranean",
+    "time_minutes": 45,
+    "difficulty": "easy",
+    "servings": 6,
+    "dietary_info": ["vegan", "gluten-free", "dairy-free"],
+    "ingredients": [
+      "green lentils",
+      "carrots",
+      "celery",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "cumin",
+      "thyme",
+      "bay leaf"
+    ],
+    "steps": [
+      "Dice carrots, celery, and onion",
+      "Sauté vegetables in pot until softened",
+      "Add minced garlic and spices, cook 1 minute",
+      "Add lentils and broth, bring to boil",
+      "Reduce heat and simmer 30-35 minutes",
+      "Remove bay leaf and serve hot"
+    ]
+  },
+  {
+    "title": "Greek Chicken Souvlaki",
+    "description": "Marinated chicken skewers with tzatziki sauce",
+    "cuisine": "Mediterranean",
+    "time_minutes": 30,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["gluten-free"],
+    "ingredients": [
+      "chicken breast",
+      "lemon juice",
+      "olive oil",
+      "oregano",
+      "garlic",
+      "greek yogurt",
+      "cucumber",
+      "pita bread"
+    ],
+    "steps": [
+      "Cut chicken into 1-inch cubes",
+      "Marinate in lemon juice, olive oil, oregano, and garlic for 20 minutes",
+      "Make tzatziki: mix yogurt, grated cucumber, garlic, and dill",
+      "Thread chicken onto skewers",
+      "Grill or broil 10-12 minutes, turning once",
+      "Serve in pita with tzatziki and vegetables"
+    ]
+  },
+  {
+    "title": "Mushroom Risotto",
+    "description": "Creamy Italian rice dish with savory mushrooms and parmesan",
+    "cuisine": "Italian",
+    "time_minutes": 40,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      "arborio rice",
+      "mushrooms",
+      "parmesan cheese",
+      "white wine",
+      "vegetable broth",
+      "onion",
+      "butter",
+      "garlic"
+    ],
+    "steps": [
+      "Heat broth in saucepan and keep warm",
+      "Sauté sliced mushrooms in butter until golden",
+      "In separate pot, sauté onion and garlic",
+      "Add rice and toast for 2 minutes",
+      "Add wine and stir until absorbed",
+      "Add broth one ladle at a time, stirring constantly",
+      "After 20 minutes, stir in mushrooms and parmesan"
+    ]
+  },
+  {
+    "title": "Quinoa Black Bean Burrito Bowl",
+    "description": "Protein-packed Mexican-inspired bowl with quinoa, beans, and fresh toppings",
+    "cuisine": "Mexican",
+    "time_minutes": 25,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "bell peppers",
+      "avocado",
+      "lime",
+      "cilantro",
+      "cheese",
+      "sour cream"
+    ],
+    "steps": [
+      "Cook quinoa according to package instructions",
+      "Sauté bell peppers until softened",
+      "Heat black beans with cumin and chili powder",
+      "Arrange quinoa in bowls as base",
+      "Top with beans, corn, peppers, and avocado",
+      "Garnish with cheese, sour cream, cilantro, and lime"
+    ]
+  },
+  {
+    "title": "Pad Thai",
+    "description": "Classic Thai noodle dish with tamarind sauce and peanuts",
+    "cuisine": "Asian",
+    "time_minutes": 25,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "rice noodles",
+      "shrimp",
+      "eggs",
+      "bean sprouts",
+      "tamarind paste",
+      "fish sauce",
+      "peanuts",
+      "lime",
+      "scallions"
+    ],
+    "steps": [
+      "Soak rice noodles in hot water until softened",
+      "Make sauce: mix tamarind paste, fish sauce, and sugar",
+      "Stir-fry shrimp in wok until pink",
+      "Push shrimp aside, scramble eggs",
+      "Add drained noodles and sauce, toss to coat",
+      "Add bean sprouts and scallions, cook 2 minutes",
+      "Serve with crushed peanuts and lime wedges"
+    ]
+  },
+  {
+    "title": "Eggplant Parmesan",
+    "description": "Layered Italian casserole with breaded eggplant, marinara, and cheese",
+    "cuisine": "Italian",
+    "time_minutes": 60,
+    "difficulty": "medium",
+    "servings": 6,
+    "dietary_info": ["vegetarian"],
+    "ingredients": [
+      "eggplant",
+      "marinara sauce",
+      "mozzarella cheese",
+      "parmesan cheese",
+      "breadcrumbs",
+      "eggs",
+      "basil",
+      "olive oil"
+    ],
+    "steps": [
+      "Slice eggplant into 1/2 inch rounds",
+      "Dip in beaten eggs, then breadcrumbs",
+      "Fry in olive oil until golden on both sides",
+      "Layer fried eggplant in baking dish with marinara and mozzarella",
+      "Sprinkle with parmesan and basil",
+      "Bake at 375°F for 25 minutes until bubbly"
+    ]
+  },
+  {
+    "title": "Coconut Curry Chickpeas",
+    "description": "Warming vegan curry with chickpeas in creamy coconut sauce",
+    "cuisine": "Asian",
+    "time_minutes": 25,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["vegan", "gluten-free", "dairy-free"],
+    "ingredients": [
+      "chickpeas",
+      "coconut milk",
+      "curry powder",
+      "onion",
+      "garlic",
+      "ginger",
+      "spinach",
+      "tomatoes",
+      "rice"
+    ],
+    "steps": [
+      "Sauté onion, garlic, and ginger in oil",
+      "Add curry powder and cook until fragrant",
+      "Add diced tomatoes and coconut milk",
+      "Stir in drained chickpeas",
+      "Simmer 15 minutes",
+      "Add spinach and cook until wilted",
+      "Serve over basmati rice"
+    ]
+  },
+  {
+    "title": "Honey Garlic Glazed Chicken",
+    "description": "Sweet and savory chicken with sticky honey garlic sauce",
+    "cuisine": "Asian",
+    "time_minutes": 30,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "chicken thighs",
+      "honey",
+      "soy sauce",
+      "garlic",
+      "ginger",
+      "rice vinegar",
+      "sesame seeds",
+      "green onions"
+    ],
+    "steps": [
+      "Season chicken thighs with salt and pepper",
+      "Sear in hot skillet until golden, about 5 minutes per side",
+      "Remove chicken and set aside",
+      "In same pan, mix honey, soy sauce, garlic, and ginger",
+      "Return chicken to pan and simmer in sauce 10 minutes",
+      "Garnish with sesame seeds and sliced green onions"
+    ]
+  },
+  {
+    "title": "Mediterranean Falafel Bowl",
+    "description": "Crispy chickpea falafel with fresh vegetables and tahini sauce",
+    "cuisine": "Mediterranean",
+    "time_minutes": 35,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["vegan", "dairy-free"],
+    "ingredients": [
+      "chickpeas",
+      "parsley",
+      "cilantro",
+      "garlic",
+      "cumin",
+      "cucumber",
+      "tomatoes",
+      "tahini",
+      "lemon"
+    ],
+    "steps": [
+      "Pulse chickpeas, herbs, garlic, and spices in food processor",
+      "Form mixture into small patties",
+      "Fry falafel in oil until golden and crispy",
+      "Make tahini sauce with tahini, lemon juice, and water",
+      "Dice cucumber and tomatoes for salad",
+      "Serve falafel over greens with vegetables and tahini sauce"
+    ]
+  },
+  {
+    "title": "Butternut Squash Soup",
+    "description": "Velvety smooth soup with roasted butternut squash and warming spices",
+    "cuisine": "American",
+    "time_minutes": 50,
+    "difficulty": "easy",
+    "servings": 6,
+    "dietary_info": ["vegan", "gluten-free", "dairy-free"],
+    "ingredients": [
+      "butternut squash",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "coconut milk",
+      "cinnamon",
+      "nutmeg",
+      "maple syrup"
+    ],
+    "steps": [
+      "Peel and cube butternut squash",
+      "Roast squash at 400°F for 30 minutes",
+      "Sauté onion and garlic until softened",
+      "Add roasted squash and broth",
+      "Simmer 10 minutes",
+      "Blend until smooth with immersion blender",
+      "Stir in coconut milk, cinnamon, nutmeg, and maple syrup"
+    ]
+  },
+  {
+    "title": "Shrimp Scampi",
+    "description": "Classic Italian-American dish with shrimp in buttery garlic sauce",
+    "cuisine": "Italian",
+    "time_minutes": 20,
+    "difficulty": "easy",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "butter",
+      "garlic",
+      "white wine",
+      "lemon",
+      "parsley",
+      "red pepper flakes"
+    ],
+    "steps": [
+      "Cook pasta according to package directions",
+      "Sauté minced garlic in butter until fragrant",
+      "Add shrimp and cook until pink, about 3 minutes",
+      "Add white wine and lemon juice, simmer 2 minutes",
+      "Toss cooked pasta with shrimp and sauce",
+      "Garnish with fresh parsley and red pepper flakes"
+    ]
+  },
+  {
+    "title": "Korean Bibimbap",
+    "description": "Colorful Korean rice bowl with vegetables, egg, and gochujang sauce",
+    "cuisine": "Asian",
+    "time_minutes": 40,
+    "difficulty": "medium",
+    "servings": 4,
+    "dietary_info": ["dairy-free"],
+    "ingredients": [
+      "rice",
+      "beef",
+      "spinach",
+      "bean sprouts",
+      "carrots",
+      "mushrooms",
+      "egg",
+      "gochujang",
+      "sesame oil"
+    ],
+    "steps": [
+      "Cook rice and keep warm",
+      "Marinate sliced beef in soy sauce and sesame oil",
+      "Blanch spinach and bean sprouts separately",
+      "Sauté carrots and mushrooms until tender",
+      "Cook beef until browned",
+      "Fry eggs sunny-side up",
+      "Arrange rice in bowls, top with vegetables, beef, and egg",
+      "Serve with gochujang sauce on the side"
+    ]
+  }
+]
