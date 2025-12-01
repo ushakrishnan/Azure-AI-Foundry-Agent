@@ -26,145 +26,149 @@ A sophisticated Python-based conversational AI agent for recipe search and ingre
 - **Observability**: Comprehensive logging for monitoring
 
 ---
+## 🎭 Orchestrator Options for Azure AI Foundry Agents
 
-## 🎭 Orchestrator Options: Understanding Your Choices
+Azure AI Foundry already provides a native agent orchestrator.
+You may optionally swap in external orchestrators depending on your needs.
 
-This Azure AI Foundry agent supports **both Managed and Bring Your Own Orchestrator (BYO)** patterns. You decide which orchestration approach fits your needs.
-
-### **Option 1: Managed Orchestrator (Current Default)**
-
-**What it is:**
-- Uses Azure AI Foundry's native function calling capabilities
-- Simple, direct integration with Azure OpenAI API
-- No external orchestration frameworks required
-- Minimal dependencies, maximum control
-
-**When to use:**
-- ✅ You want simplicity and direct Azure AI Foundry integration
-- ✅ You're building a new agent from scratch
-- ✅ You need full control over orchestration logic
-- ✅ You want to minimize external dependencies
-- ✅ Your team is comfortable with raw OpenAI API patterns
-
-**Why this approach:**
-- Direct access to Azure AI Foundry capabilities
-- No framework lock-in
-- Easier to debug and customize
-- Lower learning curve if familiar with OpenAI APIs
-- **This is "Managed"** in the sense that Azure handles the orchestration logic natively
-
----
-
-### **Option 2: BYO Orchestrator - Semantic Kernel**
+### **Option 1: Managed / Native Azure AI Foundry Agent (Recommended / Default)**
 
 **What it is:**
-- Microsoft's official SDK for building AI agents
-- Native Azure integration with enterprise features
-- Planner-based orchestration with automatic reasoning
+- Azure's built-in agent runtime
+- Handles planning, memory, tool calling, context management, and multi-step reasoning
+- No external framework required
 
-**When to use:**
-- ✅ You're building enterprise Microsoft solutions
-- ✅ You need seamless Azure service integration
-- ✅ You want automatic multi-step planning capabilities
-- ✅ Your organization standardizes on Microsoft SDKs
-- ✅ You need built-in memory, telemetry, and safety features
+**Use when:**
+- ✅ You want the simplest, most Azure-aligned approach
+- ✅ You want built-in multi-step tool calling
+- ✅ You prefer serverless agent behavior
+- ✅ You want minimal code and no orchestration maintenance
 
-**Trade-offs:**
-- More opinionated framework
-- Additional abstraction layer
-- Steeper learning curve for Semantic Kernel concepts
-- Better for complex multi-agent scenarios
-**How to switch:** See "Swap Orchestrator to Semantic Kernel" section below.
+**Pros:**
+- ✅ Automatic planning
+- ✅ Built-in memory + tools
+- ✅ Simplest architecture
+- ✅ No extra dependencies
+
+**Cons:**
+- ❌ Less low-level control
 
 ---
 
-### **Option 3: BYO Orchestrator - LangChain**
-### **Option 2: LangChain Orchestrator**
+### **Option 2: Semantic Kernel (Microsoft Orchestrator)**
 
 **What it is:**
-- Popular open-source framework for LLM applications
-- Rich ecosystem of integrations and tools
-- Chain-based orchestration with LCEL (LangChain Expression Language)
+- Microsoft's agent framework with planners, memory connectors, skills, and deep Azure integrations
 
-**When to use:**
-- ✅ You need extensive third-party integrations (vector DBs, APIs, tools)
-- ✅ Your team already uses LangChain in other projects
-- ✅ You want access to LangChain's large community and examples
-- ✅ You're building complex RAG (Retrieval Augmented Generation) pipelines
-- ✅ You need quick prototyping with pre-built components
+**Use when:**
+- ✅ You want multi-step planning with more control than AI Foundry
+- ✅ You need connectors (AI Search, Cosmos DB, Storage, SQL, etc.)
+- ✅ Your org is already using Microsoft tooling
+- ✅ You want a structured, enterprise-ready agent stack
 
-**Trade-offs:**
-- Heavier dependency footprint
-- Can be over-engineered for simple scenarios
-- Abstraction may hide Azure-specific optimizations
-- Framework updates can introduce breaking changes
+**Pros:**
+- ✅ Planners
+- ✅ Built-in memory + safety
 
-**How to switch:** See "Swap Orchestrator to LangChain" section below.
+- ✅ Azure-native ecosystem
+
+**Cons:**
+- ❌ More dependencies
+- ❌ More opinionated patterns
 
 ---
 
-### **Option 4: M365 Agent Toolkit (Different Architecture)**
+### **Option 3: LangChain (Open-Source Orchestrator)**
 
 **What it is:**
-- Microsoft 365-focused agent development toolkit
-- Integrates with Teams, SharePoint, Outlook, and other M365 services
-- Pre-built templates for M365-specific agent patterns
+- Large ecosystem for LLM apps, ideal for RAG-heavy agents and integrations
 
-**When to use:**
-- ✅ You're building agents for Microsoft Teams or M365 environments
-- ✅ You need M365 authentication and permissions integration
-- ✅ You want pre-built M365 connectors (calendars, emails, documents)
-- ✅ Your use case is primarily M365-centric workflows
+**Use when:**
+- ✅ You need many integrations (Pinecone, Weaviate, loaders, crawlers)
+- ✅ Your team already uses LangChain
+- ✅ You're building complex RAG or retrieval workflows
+- ✅ You want rapid prototyping
 
-**Why this is different:**
-- **M365 Toolkit** is optimized for M365 environments with built-in connectors
-- **This project (ChefAI)** is a general-purpose Azure AI Foundry agent
-- To make this an M365 agent, you'd need:
-  1. Install M365 Toolkit SDK
-  2. Add M365 authentication (MSAL, Azure AD)
-  3. Register agent in Teams/M365 developer portal
-  4. Implement M365-specific tool adapters
-  5. Handle M365 messaging and card formats
+**Pros:**
+- ✅ Huge ecosystem
+- ✅ Excellent for RAG pipelines
+- ✅ Many pre-built chains
 
-**Trade-offs:**
-- More setup overhead for non-M365 scenarios
-- Tightly coupled to M365 ecosystem
-- May not be ideal for standalone web/API agents
-
-**Note:** If your goal is M365 integration, consider starting with the M365 Agent Toolkit templates rather than retrofitting this codebase.
+**Cons:**
+- ❌ Heavy dependencies
+- ❌ Frequent version churn
+- ❌ More complexity than needed for basic agents
 
 ---
 
-### **Understanding "Managed" vs "BYO Orchestrator"**
+### **Option 4: M365 Agent Toolkit (M365/Teams-Specific)**
 
-**Managed Orchestrator:**
-- Azure AI Foundry handles the orchestration natively
-- You use the platform's built-in function calling
-- Orchestration logic is straightforward: call LLM → detect tool needs → execute tools → synthesize response
-- **This is the default in this project**
+**What it is:**
+- Toolkit for building agents that operate inside Teams, Outlook, and other M365 apps
 
-**Bring Your Own Orchestrator (BYO):**
-- You plug in an external framework (Semantic Kernel, LangChain)
-- The framework handles orchestration logic, planning, and tool execution
-- More features but more complexity
-- **Options 2 & 3 above (Semantic Kernel, LangChain)**
+**Use when:**
+- ✅ Your agent must run inside Teams/M365
+- ✅ You need built-in connectors (Graph API, Calendar, Mail, SharePoint)
+- ✅ You want M365 auth handled for you
 
-**Key Point:** This project is designed to support **BOTH** patterns. We implement Managed by default, but the strategy pattern architecture lets you swap to BYO frameworks easily.
+**Pros:**
+- ✅ Native Teams/Outlook integration
+- ✅ Pre-built M365 connectors
+- ✅ Handles authentication and card formats
+
+**Cons:**
+- ❌ Not suitable for general-purpose agents
+- ❌ Tightly bound to M365 ecosystem
 
 ---
 
-### **Decision Matrix: Which Orchestrator Should You Choose?**
+### **Option 5: Custom / Manual Orchestration (Not Recommended)**
 
-| Scenario | Recommended Choice | Pattern |
-|----------|-------------------|---------|
-| Simple agent, direct Azure control | **Managed** ⭐ | Managed |
-| Enterprise Microsoft solution | **Semantic Kernel** | BYO |
-| Need many third-party integrations | **LangChain** | BYO |
-| Microsoft Teams/M365 agent | **M365 Agent Toolkit** | Different Architecture |
-| Learning AI agents for first time | **Managed** ⭐ | Managed |
-| Complex multi-agent system | **Semantic Kernel** | BYO |
-| Quick prototype with existing components | **LangChain** | BYO |
-| Maximum flexibility, minimum dependencies | **Managed** ⭐ | Managed |
+**What it is:**
+- You manually build the orchestration loop using the Azure Models API (ChatCompletions)
+- You handle: planning, tool routing, memory, retries, context, validation—everything
+
+**Use when:**
+- ✅ You need extremely specialized control
+- ✅ You're integrating with legacy systems
+- ✅ You're experimenting or prototyping low-level LLM behavior
+
+**Pros:**
+- ✅ Full transparency and customization
+
+**Cons:**
+- ❌ Not recommended for production
+- ❌ SK or LangChain do this far better
+- ❌ High maintenance and complexity
+- ❌ No built-in planning or memory
+
+---
+
+### **📊 Summary Table**
+
+| Option | Orchestration Provided By | Best For | Multi-Step Planning | Dependencies |
+|--------|---------------------------|----------|---------------------|------------|
+| 1. Azure AI Foundry Agent | Azure | General agents, simplest path | Yes (built-in) | None |
+| 2. Semantic Kernel | SK Planner | Enterprise + Azure-native apps | Yes | Semantic Kernel |
+| 3. LangChain | LC AgentExecutor | RAG-heavy + integrations | Yes | LangChain |
+| 4. M365 Agent Toolkit | Toolkit | Teams/M365 apps | Yes | M365 SDKs |
+| 5. Custom Manual | You | Highly custom logic | No (you build it) | None |
+
+---
+
+## **Why This Project Uses Direct Azure OpenAI:**
+1. **Educational**: Shows core agent patterns without framework magic
+2. **Transparent**: You see exactly what happens at each step
+3. **Flexible**: Easy to customize without fighting framework constraints
+4. **Lightweight**: Minimal dependencies
+
+**When to Switch to BYO Framework:**
+- You need automatic multi-step planning
+- You want framework-provided memory/telemetry instead of building it
+- You need extensive integrations (LangChain's 300+ connectors)
+- Your team prefers configuration over custom code
+
+**How to Switch:** This project uses strategy pattern. To swap orchestrators: implement new class in `orchestrator.py`, change `ORCHESTRATOR_TYPE` in `.env`.
 
 ---
 
@@ -703,3 +707,4 @@ Contributions welcome! Areas for enhancement:
 ---
 
 **Happy Cooking with ChefAI! 🍳👨‍🍳👩‍🍳**
+
